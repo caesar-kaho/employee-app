@@ -1,0 +1,9 @@
+spring:
+  r2dbc:
+    username: admin
+    password: password
+    url: r2dbc:postgresql://localhost:5432/employee
+  sql:
+    init:
+      schema-locations: schema.sql
+      mode: always

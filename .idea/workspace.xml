@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a8077d02-5bc2-4a20-9588-962c6f11f625" name="Changes" comment="built-in support for Docker Compose">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/salary-service/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/salary-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/salary-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/salary-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/salary-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/salary-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/salary-service/src/main/java/com/demo/salaryservice/SalaryServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/salary-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/salary-service/src/test/java/com/demo/salaryservice/SalaryServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skaffold.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2oSVjN6bKNEhtfJICXRnHO9DPOR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ACTIVE_CLOUD_PROJECT_ACCOUNT&quot;: &quot;caesarkaho@gmail.com&quot;,
+    &quot;ACTIVE_CLOUD_PROJECT_ID&quot;: &quot;lateral-apex-384712&quot;,
+    &quot;ACTIVE_CLOUD_PROJECT_NAME&quot;: &quot;My First Project&quot;,
+    &quot;ACTIVE_CLOUD_PROJECT_NUMBER&quot;: &quot;67433594102&quot;,
+    &quot;Cloud Code: Kubernetes.employee-app.executor&quot;: &quot;Run&quot;,
+    &quot;JAR Application.springboot-docker-k8s-0.0.1-SNAPSHOT.jar.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.springboot-docker-k8s [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.springboot-docker-k8s [org.graalvm.buildtools:native-maven-plugin:0.10.3:build].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.springboot-docker-k8s [package].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.EmployeeServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SpringbootDockerK8sApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.google.cloudcode.ide_session_index&quot;: &quot;20241107_0004&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kahokwok/eclipse-workspace/learn/employee-app&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.google.cloud.tools.intellij.configurables.DependenciesConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RunManager" selected="Cloud Code: Kubernetes.employee-app">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="springboot-docker-k8s" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="springboot-docker-k8s" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="dev" />
+      <option name="ALTERNATIVE_JRE_PATH" value="graalvm-23" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="employee-app" />
+      <projectPathOnTarget name="projectPathOnTarget" value="/app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.demo.employee.app.EmployeeServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="employee-app" type="google-container-tools-skaffold-run-config" factoryName="google-container-tools-skaffold-run-config-dev" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="buildEnvironment" value="Local" />
+      <option name="cleanupDeployments" value="true" />
+      <option name="deployToCurrentContext" value="true" />
+      <option name="deployToMinikube" value="false" />
+      <option name="envVariables" />
+      <option name="imageRepositoryOverride" />
+      <option name="kubernetesContext" />
+      <option name="mappings">
+        <list />
+      </option>
+      <option name="moduleDeploymentType" value="DEPLOY_EVERYTHING" />
+      <option name="projectPathOnTarget" />
+      <option name="resourceDeletionTimeoutMins" value="2" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="skaffoldConfigurationFilePath" value="$PROJECT_DIR$/skaffold.yaml" />
+      <option name="skaffoldModules">
+        <list>
+          <option value="employee-app" />
+        </list>
+      </option>
+      <option name="skaffoldNamespace" />
+      <option name="skaffoldProfile" />
+      <option name="skaffoldWatchMode" value="ON_DEMAND" />
+      <option name="statusCheck" value="true" />
+      <option name="verbosity" value="WARN" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.EmployeeServiceApplication" />
+      <item itemvalue="Cloud Code: Kubernetes.employee-app" />
+    </list>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a8077d02-5bc2-4a20-9588-962c6f11f625" name="Changes" comment="" />
+      <created>1730863097533</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730863097533</updated>
+      <workItem from="1730863098541" duration="25311000" />
+      <workItem from="1730962287430" duration="65000" />
+      <workItem from="1730962991607" duration="1699000" />
+      <workItem from="1730964778752" duration="208000" />
+      <workItem from="1730965012096" duration="484000" />
+      <workItem from="1730966159935" duration="3317000" />
+    </task>
+    <task id="LOCAL-00001" summary="built-in support for Docker Compose">
+      <option name="closed" value="true" />
+      <created>1730883964914</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730883964914</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="built-in support for Docker Compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="built-in support for Docker Compose" />
+  </component>
+</project>

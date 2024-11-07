@@ -1,0 +1,10 @@
+services:
+  employee-postgres:
+    image: "postgres:15.3"
+    container_name: "employee-postgres"
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: employee
