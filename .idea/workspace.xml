@@ -5,18 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8077d02-5bc2-4a20-9588-962c6f11f625" name="Changes" comment="built-in support for Docker Compose">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/salary-service/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/salary-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/salary-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/salary-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/salary-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/salary-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/salary-service/src/main/java/com/demo/salaryservice/SalaryServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/salary-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/salary-service/src/test/java/com/demo/salaryservice/SalaryServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skaffold.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/salary-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/salary-service/k8s/postgresql.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/salary-service/k8s/salary-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/salary-service/src/main/java/com/demo/salary/controller/SalaryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/salary-service/src/main/java/com/demo/salary/model/Salary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/salary-service/src/main/java/com/demo/salary/repository/SalaryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/salary-service/src/main/java/com/demo/salary/service/SalaryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/salary-service/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salary-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/salary-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salary-service/src/main/java/com/demo/salaryservice/SalaryServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/salary-service/src/main/java/com/demo/salary/SalaryServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salary-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/salary-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salary-service/src/test/java/com/demo/salaryservice/SalaryServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/salary-service/src/test/java/com/demo/salary/SalaryServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skaffold.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/skaffold.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +48,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -57,42 +59,60 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ACTIVE_CLOUD_PROJECT_ACCOUNT&quot;: &quot;caesarkaho@gmail.com&quot;,
-    &quot;ACTIVE_CLOUD_PROJECT_ID&quot;: &quot;lateral-apex-384712&quot;,
-    &quot;ACTIVE_CLOUD_PROJECT_NAME&quot;: &quot;My First Project&quot;,
-    &quot;ACTIVE_CLOUD_PROJECT_NUMBER&quot;: &quot;67433594102&quot;,
-    &quot;Cloud Code: Kubernetes.employee-app.executor&quot;: &quot;Run&quot;,
-    &quot;JAR Application.springboot-docker-k8s-0.0.1-SNAPSHOT.jar.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.springboot-docker-k8s [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.springboot-docker-k8s [org.graalvm.buildtools:native-maven-plugin:0.10.3:build].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.springboot-docker-k8s [package].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.EmployeeServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.SpringbootDockerK8sApplication.executor&quot;: &quot;Run&quot;,
-    &quot;com.google.cloudcode.ide_session_index&quot;: &quot;20241107_0004&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/kahokwok/eclipse-workspace/learn/employee-app&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.google.cloud.tools.intellij.configurables.DependenciesConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ACTIVE_CLOUD_PROJECT_ACCOUNT": "caesarkaho@gmail.com",
+    "ACTIVE_CLOUD_PROJECT_ID": "fabled-infinity-441102-r3",
+    "ACTIVE_CLOUD_PROJECT_NAME": "My-project",
+    "ACTIVE_CLOUD_PROJECT_NUMBER": "163801867520",
+    "Cloud Code: Cloud Run.Cloud Run: Run Locally.executor": "Run",
+    "Cloud Code: Kubernetes.Debug(5005): employee-service.executor": "Debug",
+    "Cloud Code: Kubernetes.Debug(5006): salary-service.executor": "Debug",
+    "Cloud Code: Kubernetes.employee-app.executor": "Run",
+    "Docker.employee-service/compose.yaml.employee-postgres: Compose Deployment.executor": "Run",
+    "Docker.employee-service/compose.yaml: Compose Deployment.executor": "Run",
+    "JAR Application.springboot-docker-k8s-0.0.1-SNAPSHOT.jar.executor": "Run",
+    "Maven.springboot-docker-k8s [clean].executor": "Run",
+    "Maven.springboot-docker-k8s [org.graalvm.buildtools:native-maven-plugin:0.10.3:build].executor": "Run",
+    "Maven.springboot-docker-k8s [package].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.EmployeeServiceApplication.executor": "Run",
+    "Spring Boot.SpringbootDockerK8sApplication.executor": "Run",
+    "com.google.cloudcode.ide_session_index": "20241112_0008",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/kahokwok/eclipse-workspace/learn/employee-app",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "google.app.engine.settings",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/salary-service/src/main/java/com/demo/salary" />
+      <recent name="$PROJECT_DIR$/employee-service/src/main/java/com/demo/employee" />
+      <recent name="$PROJECT_DIR$/salary-service/src/main/java/com/demo/salary/app" />
+    </key>
   </component>
   <component name="RunManager" selected="Cloud Code: Kubernetes.employee-app">
     <configuration default="true" type="JetRunConfigurationType">
@@ -120,14 +140,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="employee-app" type="google-container-tools-skaffold-run-config" factoryName="google-container-tools-skaffold-run-config-dev" show_console_on_std_err="false" show_console_on_std_out="false">
       <option name="allowRunningInParallel" value="false" />
       <option name="buildEnvironment" value="Local" />
-      <option name="cleanupDeployments" value="true" />
+      <option name="cleanupDeployments" value="false" />
       <option name="deployToCurrentContext" value="true" />
       <option name="deployToMinikube" value="false" />
       <option name="envVariables" />
-      <option name="imageRepositoryOverride" />
+      <option name="imageRepositoryOverride" value="asia-east1-docker.pkg.dev/fabled-infinity-441102-r3/employee-app" />
       <option name="kubernetesContext" />
       <option name="mappings">
         <list />
@@ -152,8 +178,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.EmployeeServiceApplication" />
       <item itemvalue="Cloud Code: Kubernetes.employee-app" />
+      <item itemvalue="Spring Boot.EmployeeServiceApplication" />
     </list>
   </component>
   <component name="SharedIndexes">
@@ -178,6 +204,19 @@
       <workItem from="1730964778752" duration="208000" />
       <workItem from="1730965012096" duration="484000" />
       <workItem from="1730966159935" duration="3317000" />
+      <workItem from="1730969522464" duration="14870000" />
+      <workItem from="1731046397743" duration="6910000" />
+      <workItem from="1731294244476" duration="1646000" />
+      <workItem from="1731295930048" duration="11648000" />
+      <workItem from="1731376436733" duration="1966000" />
+      <workItem from="1731380133296" duration="137000" />
+      <workItem from="1731380621839" duration="400000" />
+      <workItem from="1731381190285" duration="26000" />
+      <workItem from="1731381489323" duration="407000" />
+      <workItem from="1731382528123" duration="2949000" />
+      <workItem from="1731392841183" duration="7000" />
+      <workItem from="1731393798169" duration="987000" />
+      <workItem from="1731394818656" duration="1267000" />
     </task>
     <task id="LOCAL-00001" summary="built-in support for Docker Compose">
       <option name="closed" value="true" />

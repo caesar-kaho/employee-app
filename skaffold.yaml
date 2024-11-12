@@ -1,13 +1,36 @@
-apiVersion: skaffold/v4beta11
+apiVersion: skaffold/v4beta6
 kind: Config
 metadata:
   name: employee-app
 build:
   artifacts:
+#    - image: employee-service
+#      context: employee-service
+#      docker:
+#        dockerfile: Dockerfile
+#    - image: salary-service
+#      context: salary-service
+#      docker:
+#        dockerfile: Dockerfile
+# if you want to use buildpacks, uncomment the following and comment the above
     - image: employee-service
       context: employee-service
-      docker:
-        dockerfile: Dockerfile
+      buildpacks:
+        builder: 'paketobuildpacks/builder:base'
+    - image: salary-service
+      context: salary-service
+      buildpacks:
+        builder: 'paketobuildpacks/builder:base'
+portForward:
+  - resourceType: service
+    resourceName: employee-service
+    port: 80
+    localPort: 8080
+  - resourceType: service
+    resourceName: salary-service
+    port: 80
+    localPort: 8081
 manifests:
   rawYaml:
     - employee-service/k8s/*
+    - salary-service/k8s/*

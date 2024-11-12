@@ -1,0 +1,64 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: salary-service
+  labels:
+    app: salary-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: salary-service
+  template:
+    metadata:
+      labels:
+        app: salary-service
+    spec:
+      #      initContainers:
+      #        - name: delay-container
+      #          image: busybox:1.28
+      #          command: ['sh', '-c', 'echo Waiting for ...! && sleep 120']
+      containers:
+        - name: salary-service
+          image: salary-service
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8081
+          livenessProbe:
+            httpGet:
+              path: /actuator/health/liveness
+              port: 8081
+            initialDelaySeconds: 15
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /actuator/health/readiness
+              port: 8081
+            initialDelaySeconds: 16
+            periodSeconds: 5
+          env:
+            - name: SPRING_R2DBC_URL
+              value: r2dbc:postgresql://salary-postgres/salary
+            - name: SPRING_R2DBC_USERNAME
+              value: admin
+            - name: SPRING_R2DBC_PASSWORD
+              value: password
+      imagePullSecrets:
+        - name: gcp-artifact-registry
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: salary-service
+  labels:
+    app: salary-service
+spec:
+  type: ClusterIP
+  selector:
+    app: salary-service
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8081

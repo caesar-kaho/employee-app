@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: salary-service
+  sql:
+    init:
+      mode: always
+
+server:
+  port: 8081
+
+management:
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      show-details: always
+      show-components: always

@@ -1,4 +1,4 @@
-package com.demo.salaryservice;
+package com.demo.salary;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
